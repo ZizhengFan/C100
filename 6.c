@@ -1,12 +1,5 @@
 /**
- * @file 6.c
- * @author ZizhengFan (zfan063@uottawa.ca)
- * @brief 用"*"号输出字母C的图案
- * @version 0.1
- * @date 2022-04-30
- * 
- * @copyright Copyright (c) 2022
- * 
+ * 用"*"号输出字母C的图案
  */
 
 #include <stdio.h>
