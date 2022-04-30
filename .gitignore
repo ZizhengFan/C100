@@ -11,3 +11,4 @@ cscope.po.out
 cmake-build-*/
 .DS_Store
 .vscode
+!/CMakeLists.txt
