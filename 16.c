@@ -8,8 +8,41 @@
 #include <stdio.h>
 
 int main(){
-    int a = 1997;
-    int b = 615;
+    int a;
+    int b;
+    int temp, temp1;
+    int gcd, lcm;
+    int mul;
+    
+    printf("Enter: ");
+    scanf("%d %d", &a, &b);
+    
+    gcd = 0;
+    mul = a * b;
+    
+    if (a < b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    
+//    if (a == b) {
+//        gcd = a;
+//        lcm = b;
+//    }
+    
+    temp1 = a % b;
+    
+    while (temp1 != 0){
+        a = b;
+        b = temp1;
+        temp1 = a % b;
+    }
+    
+    gcd = b;
+    lcm = mul / gcd;
+    printf("gcd = %d, lcm = %d.\n", gcd, lcm);
+    
     
     return 0;
 }
